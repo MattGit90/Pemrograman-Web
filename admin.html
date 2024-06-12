@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <link rel="icon" href="add_game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Game</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html"></a>OG Club</h1>
+            <a href="" class=""></a>
+            <ul class="nav-items">
+                <li class="active"><a href="homepage.html" class="nav-link clr-transition">Homepage</a></li>
+                <li><a href="gamepage.html" class="nav-link clr-transition">Game</a></li>
+                <li><a href="about.html" class="nav-link clr-transition">Admin</a></li>
+            </ul>
+            <!-- Add Game Button -->
+            <button class="logout-button" onclick="Logout()">Logout</button>
+        </div>
+    </header>
+
+    <section id="hero" class="main">
+        <div class="konten">
+            <h2>ADD YOUR GAME</h2>
+        </div> <!-- Closing konten div -->
+
+        <div class="form">
+            <form id="addGameForm">
+                <p>Nama Game:</p>
+                <input type="text" id="nama" name="nama" placeholder="Nama Lengkap">
+                <p>Gambar Game:</p>
+                <input type="file" id="dokumen" name="image">
+                <p>Company:</p>
+                <input type="text" id="Company" name="Company" placeholder="Nama Company">
+                <p>Company Website:</p>
+                <input type="url" id="link" name="linkcompany" placeholder="Link Web Company">
+                <p>Game Mode:</p>
+                <select id="mode" name="mode">
+                    <option value="Single-Player">Single-Player</option>
+                    <option value="Multiplayer">Multiplayer</option>
+                    <option value="BattleRoyal">BattleRoyal</option>
+                    <option value="Survival">Survival</option>
+                </select>
+                <p>Genre:</p>
+                <select id="Genre" name="Genre">
+                    <option value="Action">Action</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="RPG">RPG</option>
+                    <option value="Strategy">Strategy</option>
+                    <option value="Puzzle">Puzzle</option>
+                </select>
+                <button type="button" onclick="submitGame()">Confirm</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function submitGame() {
+            const form = document.getElementById('addGameForm');
+            const formData = new FormData(form);
+
+            fetch('your-server-endpoint-url', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                // Optionally, you can add code here to handle the successful submission,
+                // like displaying a success message or redirecting to another page.
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                // Optionally, you can add code here to handle errors,
+                // like displaying an error message.
+            });
+        }
+    </script>
+
+
+<div class="history">
+    <div class="history-list">
+        <div class="judul">
+            <h2>HISTORY LIST</h2>
+        </div>
+
+        <table border="1">
+            <tr>
+                <th width="350">Nama Game</th>
+                <th width="200">Gambar Game</th>
+                <th width="200">Company</th>
+                <th width="200">Company Website</th>
+                <th width="200">Gamemode</th>
+                <th width="200">Genre</th>
+                <th width="150">Action</th>
+
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+
+.container h1 {
+    padding-left: 50px;
+}
+
+header{
+    background-color: rgba(30, 33, 36, 0.5);
+    width: 100%;
+    border: 1px solid;
+    }
+
+.nav-items{
+	color: #eaeaea;
+}
+
+.nav-items ul li form{
+	text-align: right;
+	margin-left: 10px;
+	}
+
+
+
+header h1 {
+	margin: 0;
+	color: #eaeaea;
+	padding: 15px 0;
+}
+
+header ul {
+	justify-content: flex-end;
+}
+
+header ul li {
+	display: inline-block;
+}
+
+
+header ul li a {
+	padding:25px 20px;
+	display: inline-block;
+}
+
+header ul li a:hover{
+    background-color: #17202A;
+}
+
+.logout-button {
+    padding: 0.5em 1em;
+    background-color: transparent;
+    color: #eaeaea;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid;
+}
+
+body {
+    background-color: #222121;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+    color: #eaeaea;
+}
+
+.konten h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    color: #eaeaea;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form p {
+    color: #eaeaea;
+    margin: 10px 0;
+}
+
+.form input[type="text"],
+.form input[type="url"],
+.form input[type="file"],
+.form select {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+.form input[type="text"]::placeholder,
+.form input[type="url"]::placeholder {
+    color: #ccc;
+}
+
+.form select {
+    background-color: #333;
+    color: #fff;
+}
+
+footer {
+    background: #ccc;
+    color: #222;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container h1 {
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .nav-items ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-items ul li {
+        margin: 5px 0;
+    }
+
+    .form input[type="text"],
+    .form input[type="url"],
+    .form input[type="file"],
+    .form select {
+        width: 100%;
+    }
+}
+
+table{
+    border-collapse: collapse;
+    padding-top: 30px;
+    font-size: 10pt;
+    border: 1px solid #222;
+}
+
+td{
+    padding: 3px;
+    height: 25px;
+}
+
+th{
+    background-color: #eaeaea;
+    color: #222;
+    height: 30px; 
+}
+
+.history h2{
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    color: #eaeaea;
+}
+
+.history .judul { /* Target the container of the H2 */
+    border-top: 2px solid #eaeaea; /* Add a 2px solid line in white at the top */
+    padding-top: 10px; /* Add some padding above the line for better spacing */
+}

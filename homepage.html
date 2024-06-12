@@ -5,25 +5,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
     <link rel="icon" href="style.css">
     <title>Homepage</title>
 </head>
 
 <body>
     <header>
-        <div class="">
-        <h1><a href="index.html">Homepage</a></h1>
-        <a href="" class=""></a>
-        
-            <ul class="nav-items">
-                <li class="active"><a href="#"  class="nav-link clr-transition">Homepage</a></li>
-                <li><a href="gamepage.html"  class="nav-link clr-transition">Game</a></li>
-                <li><a href="about.html"  class="nav-link clr-transition">About</a></li> 
-            </ul>
-        </div>
-    </header>   
+        <div class="container">
+            <h1><a href="index.html"></a>OG Club</h1>
+            <a href="" class=""></a>
 
+            <ul class="nav-items">
+                <li class="active"><a href="homepage.html" class="nav-link clr-transition">Homepage</a></li>
+                <li><a href="gamepage.html" class="nav-link clr-transition">Game</a></li>
+                <li><a href="about.html" class="nav-link clr-transition">About</a></li>
+            </ul>
+            
+            <!-- Add Game Button -->
+            <button class="add-game-button" onclick="addGame()">Login</button>
+        </div>
+    </header>  
+
+    <div class="tulisan">
+        <h1>Explore Your Games</h1>
+        <p>OG Club is a platform for the gamers to find their favorite games.</p>
+        <p>If you wish to find good game for you, feel free to explore! </p>
+        <br><br>
+        <a href="gamepage.html" class="start-game-button">GET STARTED</a>
+    </div>
 
 </body>
 </html>

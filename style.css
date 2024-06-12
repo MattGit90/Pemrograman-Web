@@ -16,6 +16,17 @@ a {
 }
 
 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container h1{
+	padding-left: 50px;
+}
+
+.container2{
 width:90%;
 padding: 0 20px;
 flex-wrap: wrap;
@@ -23,7 +34,6 @@ justify-content: center;
 gap: 20px;
 display: flex;
 
-	
 }
 
 .container:after {
@@ -131,16 +141,39 @@ header ul li a:hover{
 	padding: 8px;
 	font-weight: bold;
 	flex: 1;
+	color: #222;
 }
 
 .search-icon{
 	margin-right: 10px;
 }
 
+	.add-game-button {
+		padding: 0.5em 1em;
+		background-color: #007BFF;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color 0.3s;
+	}
+
+	.add-game-admin{
+		text-align: end;
+		justify-content: end;
+		position: relative;
+		display: flex;
+	}
+
+	.add-game-button:hover {
+		background-color: #0056b3;
+	}
+
 .konten h2{
 	display: flex;
 	align-items: center;
 	-webkit-text-fill-color: #eaeaea;
+	justify-content: space-between;
 }
 
 .konten h2::after {
@@ -148,8 +181,8 @@ header ul li a:hover{
 	display: block;
 	height: 2px; /* Ketebalan garis */
 	background-color: #eaeaea; /* Warna garis */
-	margin-left: 10px; /* Jarak antara teks dan garis */
-	flex-grow: 0.9; /* Membuat garis mengisi sisa ruang horizontal */
+	margin-left: 0px; /* Jarak antara teks dan garis */
+	flex-grow: 0.99; /* Membuat garis mengisi sisa ruang horizontal */
   }
 
 
@@ -378,12 +411,13 @@ header ul li a:hover{
 }
 
 .description p {
-    color: #b0b0ba;
+    color: #222;
     padding-top: 5px;
 }
 
 .description h4 {
     text-transform: uppercase;
+	color: #222;
 }
 
 input {
@@ -400,13 +434,13 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-    background-image: url('/image/olahraga.jpg');
+    background-image: url('/image/Tyrone.png');
 }
 .card[for="c2"] {
-    background-image: url('/image/seni.jpeg');
+    background-image: url('/image/Matt.jpeg');
 }
 .card[for="c3"] {
-    background-image: url('/image/teknologi.jpg');
+    background-image: url('/image/IMG_9325.JPG');
 }
 
 

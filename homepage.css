@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+	padding:0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container h1{
+	padding-left: 50px;
+}
+
+.container2{
+width:90%;
+padding: 0 20px;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+display: flex;
+
+}
+
+.container:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+
+header{
+    background-color: rgba(30, 33, 36, 0.5);
+	width: 100%;
+	border: 1px solid;
+}
+
+.tulisan{
+  color: #eaeaea;
+  padding-top: 80px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+body {
+	background-image: url("/image/background.jpg"); /* Ganti dengan path gambar Anda */
+	background-repeat: no-repeat; /* Opsional: mencegah gambar berulang */
+    background-position: center;
+	background-size: cover; /* Opsional: membuat gambar menutupi seluruh area */
+    min-height: 97vh;
+  }
+
+.main{
+	flex: 1;
+}
+
+
+.nav-items{
+	color: #eaeaea;
+}
+
+.nav-items ul li form{
+	text-align: right;
+	margin-left: 10px;
+	}
+
+
+header h1 {
+	margin: 0;
+	color: #eaeaea;
+	padding: 15px 0;
+}
+header ul {
+	justify-content: flex-end;
+}
+header ul li {
+	display: inline-block;
+}
+
+
+header ul li a {
+	padding:25px 20px;
+	display: inline-block;
+}
+
+header ul li a:hover{
+    background-color: #17202A;
+}
+
+.add-game-button {
+    padding: 0.5em 1em;
+    background-color: transparent;
+    color: #eaeaea;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid;
+}
+
+.start-game-button {
+    padding: 0.5em 1em;
+    background-color: transparent;
+    color: #eaeaea;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid;
+}

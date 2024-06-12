@@ -1,0 +1,87 @@
+<!-- Html SalebewAnjayy -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Review Page</title>
+    <link rel="stylesheet" href="gamedetails.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Game Review Page</h1>
+      <a href="gamepage.html" class="back-button">&laquo; Back</a>
+    </header>
+    <main>
+      <section class="game-info">
+        <h2>Game Title: Galactic Snake Game</h2>
+        <a href="https://www.gamedevwebsite.com" target="_blank">
+          <img
+            src="game-image.jpg"
+            alt="Galactic Snake Game"
+            class="responsive"
+          />
+        </a>
+        <p>
+          Game Description: A retro-style snake game where you navigate through
+          space to eat food and avoid obstacles.
+        </p>
+        <p>Release Date: June 11, 2024</p>
+        <p>
+          Game Developer:
+          <a href="https://www.gamedevwebsite.com" target="_blank"
+            >[Game Developer's Website]</a
+          >
+        </p>
+      </section>
+      <section class="customer-reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-carousel">
+          <div class="review">
+            <img src="customer1.jpg" alt="Customer 1" />
+            <div class="review-text">
+              <h3>Customer 1</h3>
+              <p>
+                This game is so much fun! I love the retro style and the
+                challenging levels.
+              </p>
+            </div>
+          </div>
+          <div class="review">
+            <img src="customer2.jpg" alt="Customer 2" />
+            <div class="review-text">
+              <h3>Customer 2</h3>
+              <p>
+                I'm not a big fan of snake games, but this one is really well
+                made. The graphics are great and the gameplay is smooth.
+              </p>
+            </div>
+          </div>
+          <!--tambah customer p review anjayMabar Salebeww -->
+          <nav>
+            <button id="backward">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="forward">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </nav>
+        </div>
+      </section>
+      <section class="game-review">
+        <h2>Leave a Review</h2>
+        <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" /><br /><br />
+          <label for="review">Review:</label>
+          <textarea id="review" name="review"></textarea><br /><br />
+          <input type="submit" value="Submit Review" onclick="submitReview()" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 [Your Name]</p>
+    </footer>
+    <script src="game_review.js"></script>
+  </body>
+</html>
